@@ -1,0 +1,29 @@
+The results demonstrated that Method 2 consistently provided high-quality recognition, even under challenging lighting conditions.
+
+---
+
+## Performance Analysis
+The analysis of ALPR system performance, highlighting the impact of environmental factors on license plate recognition accuracy. The second method, with its adaptive image processing flow, was particularly effective in enhancing character clarity and distinguishing them from backgrounds.
+
+### Scenario 1: Daytime with Clear Visibility
+- The ALPR system achieved 100% detection accuracy in optimal lighting conditions, successfully identifying the rear license plate. The application of Method 2 resulted in 100% detection and a character recognition accuracy of 99.96%.
+
+### Scenario 2: Daytime with Visible Characters
+- In this scenario, visibility issues, such as dirt on the license plate, affected the quality of the image. Despite these challenges, Method 2 successfully clarified the characters, achieving 100% detection and 99.89% character accuracy.
+
+### Scenario 3: Nighttime with Normal Light
+- The system performed well in nighttime conditions, where visibility was reduced. Method 2 enabled the system to detect and recognize license plates with 100% accuracy, although character recognition accuracy slightly dropped due to the dimmer environment and truck lights.
+
+### Scenario 4: Nighttime with Strong Lights
+- In this scenario, the strong backlight from the vehicle made license plate recognition difficult. Despite the challenges, Method 2 successfully detected and recognized the license plate, achieving 100% detection and effective segmentation of characters.
+
+These results underscore the effectiveness of Method 2, even in challenging lighting and environmental conditions. The system demonstrated its robustness in detecting and recognizing license plates across a wide range of scenarios.
+
+---
+
+## Conclusion
+This project successfully developed and evaluated an adaptive image processing technique to optimize the performance of ALPR systems. The comparison of various image processing techniques highlighted that Method 2 significantly improved character recognition accuracy by utilizing Adaptive Thresholding Gaussian Mean and AI-based image enlargement. The system performed well across diverse environmental conditions, such as varying light levels, background noise, and dirt presence on the license plate.
+
+Despite the successes, the evaluation revealed that factors such as the spacing between characters, background noise, and the surrounding lighting conditions can significantly impact the accuracy of the system. These findings suggest that further optimization is necessary to make ALPR systems more robust in real-world conditions.
+
+Future research could explore the application of alternative neural network architectures or new image processing techniques to further enhance the robustness and reliability of ALPR systems.

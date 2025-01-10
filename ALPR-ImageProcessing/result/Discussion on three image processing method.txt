@@ -1,0 +1,32 @@
+## Image Processing Techniques
+The following image processing methods were tested and compared based on their impact on ALPR performance:
+
+### Method 1
+- **Image Enlargement:** No enlargement
+- **Basic Thresholding Operation:** Thresholding to zero
+- **Adaptive Thresholding Operation:** No adaptive thresholding
+- **Morphological Operation:** Morphological opening and dilation used
+- **OCR Recognition Time:** Fastest
+- **Character Recognition Performance:** Generally identifiable, but with occasional multiple predictions
+- **Total Processing Time:** 3.95 seconds per image
+
+### Method 2 (Chosen as the Most Effective)
+- **Image Enlargement:** ESPCN model with a factor of 3
+- **Basic Thresholding Operation:** No thresholding
+- **Adaptive Thresholding Operation:** Adaptive thresholding using Gaussian Mean
+- **Morphological Operation:** Morphological opening used
+- **OCR Recognition Time:** Slower than Method 1, but faster than Method 3
+- **Character Recognition Performance:** Accurate recognition for each character without ambiguity
+- **Total Processing Time:** 5.06 seconds per image
+
+### Method 3
+- **Image Enlargement:** ESPCN model with a factor of 3
+- **Basic Thresholding Operation:** No thresholding
+- **Adaptive Thresholding Operation:** Adaptive thresholding using Gaussian Mean
+- **Morphological Operation:** Morphological opening used
+- **OCR Recognition Time:** Slowest
+- **Character Recognition Performance:** Some characters exhibit difficulty in recognition, leading to decreased accuracy
+- **Total Processing Time:** 4.82 seconds per image
+
+### Conclusion
+From the comparison table, Method 2 emerged as the most effective, balancing high accuracy with reasonable processing times. This method produced the best results for clear and accurate character recognition, making it the optimal choice for the proposed ALPR system.
